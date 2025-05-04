@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Privacy Policy | Rise Up Preschool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600&display=swap" rel="stylesheet"/>
+
+    <style>
+        :root {
+            --primary: #ff6f61;
+            --secondary: #fff3e0;
+            --accent: #aedff7;
+            --highlight: #ffe4b5;
+            --card: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #fffde7, #ffe0b2);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: radial-gradient(circle at top left, #ffd54f, #4fc3f7);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/cartographer.png');
+            opacity: 0.05;
+            z-index: 0;
+        }
+
+        header h1 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 3.5rem;
+            margin: 0;
+            z-index: 1;
+            position: relative;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 4px solid white;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            margin-top: 10px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .floating-shapes, .floating-emojis {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .floating-shapes span, .floating-emojis span {
+            position: absolute;
+            display: block;
+            font-size: 24px;
+            opacity: 0.4;
+            animation: float 12s linear infinite;
+        }
+
+        .container {
+            max-width: 1080px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: var(--card);
+            border-left: 12px solid var(--primary);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 35px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: 0.6s ease all;
+        }
+
+        .card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            font-family: 'Fredoka One', cursive;
+            color: var(--primary);
+            font-size: 1.9rem;
+        }
+
+        .card ul {
+            list-style: circle;
+            margin-left: 25px;
+        }
+
+        .card p {
+            margin-top: 10px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--accent);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 26px;
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+            box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        footer {
+            background: linear-gradient(to right, #ff8a65, #f06292);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.95rem;
+            border-top: 5px dashed white;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: underline;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0.7; }
+            100% { transform: translateY(-800px) rotate(360deg); opacity: 0; }
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="floating-shapes">
+        <span style="left: 10%; animation-delay: 0s;">●</span>
+        <span style="left: 25%; animation-delay: 2s;">●</span>
+        <span style="left: 50%; animation-delay: 4s;">●</span>
+        <span style="left: 75%; animation-delay: 6s;">●</span>
+        <span style="left: 90%; animation-delay: 1s;">●</span>
+    </div>
+    <div class="floating-emojis">
+        <span style="left: 15%; animation-delay: 1s;">🎈</span>
+        <span style="left: 40%; animation-delay: 3s;">⭐</span>
+        <span style="left: 60%; animation-delay: 5s;">🎨</span>
+        <span style="left: 80%; animation-delay: 2s;">🧸</span>
+    </div>
+    <img src="https://riseuppreschool.co.in/assets/img/riseup-logo.png" alt="Rise Up Preschool Logo" style="height: 90px; margin-bottom: 15px;" />
+    <h1 id="title">Privacy Policy</h1>
+    <p>Last Updated: May 4, 2025</p>
+</header>
+
+<div class="container">
+    <div class="card"><h2>1. Information We Collect</h2><ul><li>Parent/guardian name, phone number, and email</li><li>Child's name, age, and admission-related data</li><li>Device and browser type, IP address, pages visited</li><li>Data from contact or feedback forms</li><li>Website interaction data: time spent, clicks, and form submissions</li><li>Optional learning preferences</li></ul></div>
+    <div class="card"><h2>2. Why We Collect This Data</h2><ul><li>To process inquiries and admissions</li><li>To communicate school updates</li><li>To enhance your experience</li><li>To personalize digital learning</li><li>To improve curriculum and tools</li></ul></div>
+    <div class="card"><h2>3. How We Protect Your Data</h2><p>Encrypted data transmission, strict access controls, and secure server storage are used. We don’t sell data and restrict access to authorized staff only.</p></div>
+    <div class="card"><h2>4. Your Rights</h2><ul><li>Access your personal data</li><li>Request corrections</li><li>Withdraw consent or delete data</li></ul></div>
+    <div class="card"><h2>5. Cookies</h2><p>Cookies improve your experience. You may disable them via browser settings.</p></div>
+    <div class="card"><h2>6. Children's Privacy</h2><p>We collect data about children only with guardian consent. Parents can delete or review any such data.</p></div>
+    <div class="card"><h2>7. Third-Party Services</h2><p>We may use Google Analytics or Mailchimp, which follow privacy laws and do not misuse personal data.</p></div>
+    <div class="card"><h2>8. Policy Updates</h2><p>We may revise this policy; updates will be posted with a revised date.</p></div>
+    <div class="card"><h2>9. Contact Us</h2><p>Email: info@riseuppreschool.co.in<br>Phone: +91-XXXXXXXXXX<br>Website: <a href="https://www.riseuppreschool.co.in">riseuppreschool.co.in</a></p></div>
+</div>
+
+<footer>
+    &copy; 2025 Rise Up Preschool. All rights reserved.
+</footer>
+
+<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" title="Back to Top">&#8679;</button>
+
+<script>
+    // Typing effect
+    const title = document.getElementById('title');
+    const text = title.innerText;
+    let idx = 0;
+    title.innerText = '';
+    function typeWriter() {
+        if (idx < text.length) {
+            title.innerText += text.charAt(idx);
+            idx++;
+            setTimeout(typeWriter, 80);
+        }
+    }
+    typeWriter();
+
+    // Card animation on scroll
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+    }, { threshold: 0.2 });
+    cards.forEach(card => observer.observe(card));
+
+    // Mouse parallax effect
+    document.querySelector('header').addEventListener('mousemove', e => {
+        document.querySelectorAll('.floating-shapes span, .floating-emojis span').forEach(shape => {
+            const speed = shape.classList.contains('emoji') ? 2 : 1;
+            const x = (window.innerWidth - e.pageX * speed) / 200;
+            const y = (window.innerHeight - e.pageY * speed) / 200;
+            shape.style.transform = `translate(${x}px, ${y}px)`;
+        });
+    });
+</script>
+
+</body>
+</html>
